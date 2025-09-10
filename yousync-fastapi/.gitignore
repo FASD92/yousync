@@ -1,0 +1,45 @@
+# .gitignore
+# Python
+back-end/__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+pip-wheel-metadata/
+
+# macOS
+.DS_Store
+
+# IDE / Editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter / Notebook
+.ipynb_checkpoints/
+
+# Test / Coverage
+htmlcov/
+.coverage
+.cache/
+pytest_cache/
+
+# Database / Alembic
+*.sqlite3
+alembic/versions/*.pyc
+
+# Logs
+*.log
+*.out
+logs/
+
+back-end/venv
+# OS / 기타
+Thumbs.db
+
+back-end/.env
+
+back-end/tmp

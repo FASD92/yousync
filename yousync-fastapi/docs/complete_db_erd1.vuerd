@@ -1,0 +1,1619 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dineug/erd-editor/main/json-schema/schema.json",
+  "version": "3.0.0",
+  "settings": {
+    "width": 4000,
+    "height": 3000,
+    "scrollTop": -726.6654,
+    "scrollLeft": -1128.3256,
+    "zoomLevel": 0.76,
+    "show": 431,
+    "database": 16,
+    "databaseName": "fastapi_db",
+    "canvasType": "ERD",
+    "language": 1,
+    "tableNameCase": 4,
+    "columnNameCase": 2,
+    "bracketType": 1,
+    "relationshipDataTypeSync": true,
+    "relationshipOptimization": false,
+    "columnOrder": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "maxWidthComment": -1,
+    "ignoreSaveSettings": 0
+  },
+  "doc": {
+    "tableIds": [
+      "users_001",
+      "bookmarks_002",
+      "tokens_003",
+      "urls_004",
+      "scripts_005",
+      "actors_006",
+      "actor_aliases_007",
+      "words_008",
+      "token_actors_009",
+      "analysis_results_010"
+    ],
+    "relationshipIds": [
+      "rel_users_bookmarks",
+      "rel_tokens_bookmarks",
+      "rel_urls_tokens",
+      "rel_actors_urls",
+      "rel_actors_actor_aliases",
+      "rel_tokens_scripts",
+      "rel_scripts_words",
+      "rel_tokens_token_actors",
+      "rel_actors_token_actors",
+      "rel_tokens_analysis_results"
+    ],
+    "indexIds": [],
+    "memoIds": []
+  },
+  "collections": {
+    "tableEntities": {
+      "users_001": {
+        "id": "users_001",
+        "name": "users",
+        "comment": "사용자 정보 테이블",
+        "columnIds": [
+          "users_id",
+          "users_email",
+          "users_google_id",
+          "users_full_name",
+          "users_profile_picture",
+          "users_is_active",
+          "users_login_type",
+          "users_created_at",
+          "users_updated_at"
+        ],
+        "seqColumnIds": [
+          "users_id",
+          "users_email",
+          "users_google_id",
+          "users_full_name",
+          "users_profile_picture",
+          "users_is_active",
+          "users_login_type",
+          "users_created_at",
+          "users_updated_at"
+        ],
+        "ui": {
+          "x": 943.0834,
+          "y": 279.3898,
+          "zIndex": 1,
+          "widthName": 60,
+          "widthComment": 92,
+          "color": "#4CAF50"
+        },
+        "meta": {
+          "updateAt": 1751874937754,
+          "createAt": 1720180800000
+        }
+      },
+      "bookmarks_002": {
+        "id": "bookmarks_002",
+        "name": "bookmarks",
+        "comment": "북마크 정보 테이블",
+        "columnIds": [
+          "bookmarks_id",
+          "bookmarks_user_id",
+          "bookmarks_token_id",
+          "bookmarks_created_at"
+        ],
+        "seqColumnIds": [
+          "bookmarks_id",
+          "bookmarks_user_id",
+          "bookmarks_token_id",
+          "bookmarks_created_at"
+        ],
+        "ui": {
+          "x": 1758.0986,
+          "y": 467.6706,
+          "zIndex": 2,
+          "widthName": 64,
+          "widthComment": 92,
+          "color": "#2196F3"
+        },
+        "meta": {
+          "updateAt": 1751874936587,
+          "createAt": 1720180800000
+        }
+      },
+      "tokens_003": {
+        "id": "tokens_003",
+        "name": "tokens",
+        "comment": "토큰 정보 테이블",
+        "columnIds": [
+          "tokens_id",
+          "tokens_token_name",
+          "tokens_actor_name",
+          "tokens_category",
+          "tokens_start_time",
+          "tokens_end_time",
+          "tokens_s3_textgrid_url",
+          "tokens_s3_pitch_url",
+          "tokens_s3_bgvoice_url",
+          "tokens_youtube_url",
+          "tokens_view_count"
+        ],
+        "seqColumnIds": [
+          "tokens_id",
+          "tokens_token_name",
+          "tokens_actor_name",
+          "tokens_category",
+          "tokens_start_time",
+          "tokens_end_time",
+          "tokens_s3_textgrid_url",
+          "tokens_s3_pitch_url",
+          "tokens_s3_bgvoice_url",
+          "tokens_youtube_url",
+          "tokens_view_count"
+        ],
+        "ui": {
+          "x": 1205.9342,
+          "y": 658.6368,
+          "zIndex": 3,
+          "widthName": 60,
+          "widthComment": 81,
+          "color": "#FF9800"
+        },
+        "meta": {
+          "updateAt": 1751874920325,
+          "createAt": 1720180800000
+        }
+      },
+      "urls_004": {
+        "id": "urls_004",
+        "name": "urls",
+        "comment": "URL 정보 테이블",
+        "columnIds": [
+          "urls_youtube_url",
+          "urls_actor_id"
+        ],
+        "seqColumnIds": [
+          "urls_youtube_url",
+          "urls_actor_id"
+        ],
+        "ui": {
+          "x": 2008.7496,
+          "y": 711.3348,
+          "zIndex": 4,
+          "widthName": 60,
+          "widthComment": 84,
+          "color": "#9C27B0"
+        },
+        "meta": {
+          "updateAt": 1751874934870,
+          "createAt": 1720180800000
+        }
+      },
+      "scripts_005": {
+        "id": "scripts_005",
+        "name": "scripts",
+        "comment": "스크립트 정보 테이블",
+        "columnIds": [
+          "scripts_id",
+          "scripts_token_id",
+          "scripts_start_time",
+          "scripts_end_time",
+          "scripts_script",
+          "scripts_translation"
+        ],
+        "seqColumnIds": [
+          "scripts_id",
+          "scripts_token_id",
+          "scripts_start_time",
+          "scripts_end_time",
+          "scripts_script",
+          "scripts_translation"
+        ],
+        "ui": {
+          "x": 454.6456,
+          "y": 855.0269,
+          "zIndex": 5,
+          "widthName": 60,
+          "widthComment": 102,
+          "color": "#607D8B"
+        },
+        "meta": {
+          "updateAt": 1751874940925,
+          "createAt": 1720180800000
+        }
+      },
+      "actors_006": {
+        "id": "actors_006",
+        "name": "actors",
+        "comment": "배우 정보 테이블",
+        "columnIds": [
+          "actors_id",
+          "actors_name"
+        ],
+        "seqColumnIds": [
+          "actors_id",
+          "actors_name"
+        ],
+        "ui": {
+          "x": 1970.3772,
+          "y": 964.5354,
+          "zIndex": 6,
+          "widthName": 60,
+          "widthComment": 81,
+          "color": "#795548"
+        },
+        "meta": {
+          "updateAt": 1751874933444,
+          "createAt": 1720180800000
+        }
+      },
+      "actor_aliases_007": {
+        "id": "actor_aliases_007",
+        "name": "actor_aliases",
+        "comment": "배우 별명 테이블",
+        "columnIds": [
+          "actor_aliases_id",
+          "actor_aliases_actor_id",
+          "actor_aliases_name"
+        ],
+        "seqColumnIds": [
+          "actor_aliases_id",
+          "actor_aliases_actor_id",
+          "actor_aliases_name"
+        ],
+        "ui": {
+          "x": 1900.1713,
+          "y": 1153.6111,
+          "zIndex": 7,
+          "widthName": 77,
+          "widthComment": 81,
+          "color": "#8BC34A"
+        },
+        "meta": {
+          "updateAt": 1751874959450,
+          "createAt": 1720180800000
+        }
+      },
+      "words_008": {
+        "id": "words_008",
+        "name": "words",
+        "comment": "단어 정보 테이블",
+        "columnIds": [
+          "words_id",
+          "words_script_id",
+          "words_word",
+          "words_start_time",
+          "words_end_time"
+        ],
+        "seqColumnIds": [
+          "words_id",
+          "words_script_id",
+          "words_word",
+          "words_start_time",
+          "words_end_time"
+        ],
+        "ui": {
+          "x": 506.5102,
+          "y": 570.3464,
+          "zIndex": 8,
+          "widthName": 60,
+          "widthComment": 81,
+          "color": "#CDDC39"
+        },
+        "meta": {
+          "updateAt": 1751874939405,
+          "createAt": 1720180800000
+        }
+      },
+      "token_actors_009": {
+        "id": "token_actors_009",
+        "name": "token_actors",
+        "comment": "토큰-배우 관계 테이블 (N:M)",
+        "columnIds": [
+          "token_actors_id",
+          "token_actors_token_id",
+          "token_actors_actor_id"
+        ],
+        "seqColumnIds": [
+          "token_actors_id",
+          "token_actors_token_id",
+          "token_actors_actor_id"
+        ],
+        "ui": {
+          "x": 1226.5748,
+          "y": 1129.6585,
+          "zIndex": 9,
+          "widthName": 76,
+          "widthComment": 143,
+          "color": "#FFC107"
+        },
+        "meta": {
+          "updateAt": 1751874958237,
+          "createAt": 1720180800000
+        }
+      },
+      "analysis_results_010": {
+        "id": "analysis_results_010",
+        "name": "analysis_results",
+        "comment": "분석 결과 테이블",
+        "columnIds": [
+          "analysis_results_id",
+          "analysis_results_token_id",
+          "analysis_results_analysis_data",
+          "analysis_results_created_at"
+        ],
+        "seqColumnIds": [
+          "analysis_results_id",
+          "analysis_results_token_id",
+          "analysis_results_analysis_data",
+          "analysis_results_created_at"
+        ],
+        "ui": {
+          "x": 409.5038,
+          "y": 1113.4992,
+          "zIndex": 10,
+          "widthName": 92,
+          "widthComment": 81,
+          "color": "#E91E63"
+        },
+        "meta": {
+          "updateAt": 1751874941859,
+          "createAt": 1720180800000
+        }
+      }
+    },
+    "tableColumnEntities": {
+      "users_id": {
+        "id": "users_id",
+        "tableId": "users_001",
+        "name": "id",
+        "comment": "사용자 고유 ID (PK)",
+        "dataType": "integer",
+        "default": "nextval('users_id_seq'::regclass)",
+        "options": 11,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 101,
+          "widthDataType": 60,
+          "widthDefault": 188
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "users_email": {
+        "id": "users_email",
+        "tableId": "users_001",
+        "name": "email",
+        "comment": "이메일 주소",
+        "dataType": "character varying",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 101,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "users_google_id": {
+        "id": "users_google_id",
+        "tableId": "users_001",
+        "name": "google_id",
+        "comment": "구글 계정 ID",
+        "dataType": "character varying",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 62,
+          "widthDataType": 101,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "users_full_name": {
+        "id": "users_full_name",
+        "tableId": "users_001",
+        "name": "full_name",
+        "comment": "사용자 전체 이름",
+        "dataType": "character varying",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 81,
+          "widthDataType": 101,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "users_profile_picture": {
+        "id": "users_profile_picture",
+        "tableId": "users_001",
+        "name": "profile_picture",
+        "comment": "프로필 사진 URL",
+        "dataType": "character varying",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 85,
+          "widthComment": 84,
+          "widthDataType": 101,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "users_is_active": {
+        "id": "users_is_active",
+        "tableId": "users_001",
+        "name": "is_active",
+        "comment": "활성 상태",
+        "dataType": "boolean",
+        "default": "true",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "users_login_type": {
+        "id": "users_login_type",
+        "tableId": "users_001",
+        "name": "login_type",
+        "comment": "로그인 타입",
+        "dataType": "character varying",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 61,
+          "widthComment": 60,
+          "widthDataType": 101,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "users_created_at": {
+        "id": "users_created_at",
+        "tableId": "users_001",
+        "name": "created_at",
+        "comment": "생성 시간",
+        "dataType": "timestamp without time zone",
+        "default": "CURRENT_TIMESTAMP",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 63,
+          "widthComment": 60,
+          "widthDataType": 166,
+          "widthDefault": 133
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "users_updated_at": {
+        "id": "users_updated_at",
+        "tableId": "users_001",
+        "name": "updated_at",
+        "comment": "수정 시간",
+        "dataType": "timestamp without time zone",
+        "default": "CURRENT_TIMESTAMP",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 67,
+          "widthComment": 60,
+          "widthDataType": 166,
+          "widthDefault": 133
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "bookmarks_id": {
+        "id": "bookmarks_id",
+        "tableId": "bookmarks_002",
+        "name": "id",
+        "comment": "북마크 고유 ID (PK)",
+        "dataType": "integer",
+        "default": "nextval('bookmarks_id_seq'::regclass)",
+        "options": 11,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 101,
+          "widthDataType": 60,
+          "widthDefault": 220
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "bookmarks_user_id": {
+        "id": "bookmarks_user_id",
+        "tableId": "bookmarks_002",
+        "name": "user_id",
+        "comment": "사용자 ID (FK → users.id)",
+        "dataType": "integer",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 2,
+          "widthName": 60,
+          "widthComment": 138,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "bookmarks_token_id": {
+        "id": "bookmarks_token_id",
+        "tableId": "bookmarks_002",
+        "name": "token_id",
+        "comment": "토큰 ID (FK → tokens.id)",
+        "dataType": "integer",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 2,
+          "widthName": 60,
+          "widthComment": 135,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "bookmarks_created_at": {
+        "id": "bookmarks_created_at",
+        "tableId": "bookmarks_002",
+        "name": "created_at",
+        "comment": "생성 시간",
+        "dataType": "timestamp without time zone",
+        "default": "CURRENT_TIMESTAMP",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 63,
+          "widthComment": 60,
+          "widthDataType": 166,
+          "widthDefault": 133
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "tokens_id": {
+        "id": "tokens_id",
+        "tableId": "tokens_003",
+        "name": "id",
+        "comment": "토큰 고유 ID (PK)",
+        "dataType": "integer",
+        "default": "nextval('tokens_id_seq'::regclass)",
+        "options": 11,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 90,
+          "widthDataType": 60,
+          "widthDefault": 195
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "tokens_token_name": {
+        "id": "tokens_token_name",
+        "tableId": "tokens_003",
+        "name": "token_name",
+        "comment": "토큰 이름",
+        "dataType": "character varying",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 0,
+          "widthName": 71,
+          "widthComment": 60,
+          "widthDataType": 101,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "tokens_actor_name": {
+        "id": "tokens_actor_name",
+        "tableId": "tokens_003",
+        "name": "actor_name",
+        "comment": "배우 이름",
+        "dataType": "character varying",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 0,
+          "widthName": 69,
+          "widthComment": 60,
+          "widthDataType": 101,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "tokens_category": {
+        "id": "tokens_category",
+        "tableId": "tokens_003",
+        "name": "category",
+        "comment": "카테고리",
+        "dataType": "character varying",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 101,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "tokens_start_time": {
+        "id": "tokens_start_time",
+        "tableId": "tokens_003",
+        "name": "start_time",
+        "comment": "시작 시간",
+        "dataType": "double precision",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 96,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "tokens_end_time": {
+        "id": "tokens_end_time",
+        "tableId": "tokens_003",
+        "name": "end_time",
+        "comment": "종료 시간",
+        "dataType": "double precision",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 96,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "tokens_s3_textgrid_url": {
+        "id": "tokens_s3_textgrid_url",
+        "tableId": "tokens_003",
+        "name": "s3_textgrid_url",
+        "comment": "S3 텍스트그리드 URL",
+        "dataType": "text",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 88,
+          "widthComment": 110,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "tokens_s3_pitch_url": {
+        "id": "tokens_s3_pitch_url",
+        "tableId": "tokens_003",
+        "name": "s3_pitch_url",
+        "comment": "S3 피치 URL",
+        "dataType": "text",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 72,
+          "widthComment": 68,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "tokens_s3_bgvoice_url": {
+        "id": "tokens_s3_bgvoice_url",
+        "tableId": "tokens_003",
+        "name": "s3_bgvoice_url",
+        "comment": "S3 배경음성 URL",
+        "dataType": "text",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 88,
+          "widthComment": 89,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "tokens_youtube_url": {
+        "id": "tokens_youtube_url",
+        "tableId": "tokens_003",
+        "name": "youtube_url",
+        "comment": "유튜브 URL (FK → urls.youtube_url)",
+        "dataType": "text",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 2,
+          "widthName": 69,
+          "widthComment": 196,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "urls_youtube_url": {
+        "id": "urls_youtube_url",
+        "tableId": "urls_004",
+        "name": "youtube_url",
+        "comment": "유튜브 URL (PK)",
+        "dataType": "text",
+        "default": "",
+        "options": 11,
+        "ui": {
+          "keys": 1,
+          "widthName": 69,
+          "widthComment": 88,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "urls_actor_id": {
+        "id": "urls_actor_id",
+        "tableId": "urls_004",
+        "name": "actor_id",
+        "comment": "배우 ID (FK → actors.id)",
+        "dataType": "integer",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 2,
+          "widthName": 60,
+          "widthComment": 132,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "scripts_id": {
+        "id": "scripts_id",
+        "tableId": "scripts_005",
+        "name": "id",
+        "comment": "스크립트 고유 ID (PK)",
+        "dataType": "integer",
+        "default": "nextval('scripts_id_seq'::regclass)",
+        "options": 11,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 111,
+          "widthDataType": 60,
+          "widthDefault": 196
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "scripts_token_id": {
+        "id": "scripts_token_id",
+        "tableId": "scripts_005",
+        "name": "token_id",
+        "comment": "토큰 ID (FK → tokens.id)",
+        "dataType": "integer",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 2,
+          "widthName": 60,
+          "widthComment": 135,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "scripts_start_time": {
+        "id": "scripts_start_time",
+        "tableId": "scripts_005",
+        "name": "start_time",
+        "comment": "시작 시간",
+        "dataType": "double precision",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 96,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "scripts_end_time": {
+        "id": "scripts_end_time",
+        "tableId": "scripts_005",
+        "name": "end_time",
+        "comment": "종료 시간",
+        "dataType": "double precision",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 96,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "scripts_script": {
+        "id": "scripts_script",
+        "tableId": "scripts_005",
+        "name": "script",
+        "comment": "스크립트 내용",
+        "dataType": "text",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 68,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "scripts_translation": {
+        "id": "scripts_translation",
+        "tableId": "scripts_005",
+        "name": "translation",
+        "comment": "번역",
+        "dataType": "text",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 62,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "actors_id": {
+        "id": "actors_id",
+        "tableId": "actors_006",
+        "name": "id",
+        "comment": "배우 고유 ID (PK)",
+        "dataType": "integer",
+        "default": "nextval('actors_id_seq'::regclass)",
+        "options": 11,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 90,
+          "widthDataType": 60,
+          "widthDefault": 193
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "actors_name": {
+        "id": "actors_name",
+        "tableId": "actors_006",
+        "name": "name",
+        "comment": "배우 이름",
+        "dataType": "character varying",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 101,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "actor_aliases_id": {
+        "id": "actor_aliases_id",
+        "tableId": "actor_aliases_007",
+        "name": "id",
+        "comment": "별명 고유 ID (PK)",
+        "dataType": "integer",
+        "default": "nextval('actor_aliases_id_seq'::regclass)",
+        "options": 11,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 90,
+          "widthDataType": 60,
+          "widthDefault": 232
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "actor_aliases_actor_id": {
+        "id": "actor_aliases_actor_id",
+        "tableId": "actor_aliases_007",
+        "name": "actor_id",
+        "comment": "배우 ID (FK → actors.id)",
+        "dataType": "integer",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 2,
+          "widthName": 60,
+          "widthComment": 132,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "actor_aliases_name": {
+        "id": "actor_aliases_name",
+        "tableId": "actor_aliases_007",
+        "name": "name",
+        "comment": "별명",
+        "dataType": "character varying",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 101,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "words_id": {
+        "id": "words_id",
+        "tableId": "words_008",
+        "name": "id",
+        "comment": "단어 고유 ID (PK)",
+        "dataType": "integer",
+        "default": "nextval('words_id_seq'::regclass)",
+        "options": 11,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 90,
+          "widthDataType": 60,
+          "widthDefault": 192
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "words_script_id": {
+        "id": "words_script_id",
+        "tableId": "words_008",
+        "name": "script_id",
+        "comment": "스크립트 ID (FK → scripts.id)",
+        "dataType": "integer",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 2,
+          "widthName": 60,
+          "widthComment": 156,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "words_word": {
+        "id": "words_word",
+        "tableId": "words_008",
+        "name": "word",
+        "comment": "단어",
+        "dataType": "character varying",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 101,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "words_start_time": {
+        "id": "words_start_time",
+        "tableId": "words_008",
+        "name": "start_time",
+        "comment": "시작 시간",
+        "dataType": "double precision",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 96,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "words_end_time": {
+        "id": "words_end_time",
+        "tableId": "words_008",
+        "name": "end_time",
+        "comment": "종료 시간",
+        "dataType": "double precision",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 96,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "token_actors_id": {
+        "id": "token_actors_id",
+        "tableId": "token_actors_009",
+        "name": "id",
+        "comment": "관계 고유 ID (PK)",
+        "dataType": "integer",
+        "default": "nextval('token_actors_id_seq'::regclass)",
+        "options": 11,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 90,
+          "widthDataType": 60,
+          "widthDefault": 231
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "token_actors_token_id": {
+        "id": "token_actors_token_id",
+        "tableId": "token_actors_009",
+        "name": "token_id",
+        "comment": "토큰 ID (FK → tokens.id)",
+        "dataType": "integer",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 2,
+          "widthName": 60,
+          "widthComment": 135,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "token_actors_actor_id": {
+        "id": "token_actors_actor_id",
+        "tableId": "token_actors_009",
+        "name": "actor_id",
+        "comment": "배우 ID (FK → actors.id)",
+        "dataType": "integer",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 2,
+          "widthName": 60,
+          "widthComment": 132,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "analysis_results_id": {
+        "id": "analysis_results_id",
+        "tableId": "analysis_results_010",
+        "name": "id",
+        "comment": "분석 고유 ID (PK)",
+        "dataType": "integer",
+        "default": "nextval('analysis_results_id_seq'::regclass)",
+        "options": 11,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 90,
+          "widthDataType": 60,
+          "widthDefault": 248
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "analysis_results_token_id": {
+        "id": "analysis_results_token_id",
+        "tableId": "analysis_results_010",
+        "name": "token_id",
+        "comment": "토큰 ID (FK → tokens.id)",
+        "dataType": "integer",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 2,
+          "widthName": 60,
+          "widthComment": 135,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "analysis_results_analysis_data": {
+        "id": "analysis_results_analysis_data",
+        "tableId": "analysis_results_010",
+        "name": "analysis_data",
+        "comment": "분석 데이터 (JSON)",
+        "dataType": "json",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 79,
+          "widthComment": 102,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "analysis_results_created_at": {
+        "id": "analysis_results_created_at",
+        "tableId": "analysis_results_010",
+        "name": "created_at",
+        "comment": "생성 시간",
+        "dataType": "timestamp without time zone",
+        "default": "CURRENT_TIMESTAMP",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 63,
+          "widthComment": 60,
+          "widthDataType": 166,
+          "widthDefault": 133
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      }
+    },
+    "relationshipEntities": {
+      "rel_users_bookmarks": {
+        "id": "rel_users_bookmarks",
+        "identification": true,
+        "relationshipType": 16,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "users_001",
+          "columnIds": [
+            "users_id"
+          ],
+          "x": 1608.0834,
+          "y": 415.3898,
+          "direction": 2
+        },
+        "end": {
+          "tableId": "bookmarks_002",
+          "columnIds": [
+            "bookmarks_user_id"
+          ],
+          "x": 1758.0986,
+          "y": 505.6706,
+          "direction": 1
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "rel_tokens_bookmarks": {
+        "id": "rel_tokens_bookmarks",
+        "identification": true,
+        "relationshipType": 16,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "tokens_003",
+          "columnIds": [
+            "tokens_id"
+          ],
+          "x": 1558.4342,
+          "y": 658.6368,
+          "direction": 4
+        },
+        "end": {
+          "tableId": "bookmarks_002",
+          "columnIds": [
+            "bookmarks_token_id"
+          ],
+          "x": 1758.0986,
+          "y": 581.6705999999999,
+          "direction": 1
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "rel_urls_tokens": {
+        "id": "rel_urls_tokens",
+        "identification": true,
+        "relationshipType": 16,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "urls_004",
+          "columnIds": [
+            "urls_youtube_url"
+          ],
+          "x": 2008.7496,
+          "y": 763.3348,
+          "direction": 1
+        },
+        "end": {
+          "tableId": "tokens_003",
+          "columnIds": [
+            "tokens_youtube_url"
+          ],
+          "x": 1910.9342,
+          "y": 818.6368,
+          "direction": 2
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "rel_actors_urls": {
+        "id": "rel_actors_urls",
+        "identification": true,
+        "relationshipType": 16,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "actors_006",
+          "columnIds": [
+            "actors_id"
+          ],
+          "x": 2254.8772,
+          "y": 964.5354,
+          "direction": 4
+        },
+        "end": {
+          "tableId": "urls_004",
+          "columnIds": [
+            "urls_actor_id"
+          ],
+          "x": 2231.7496,
+          "y": 815.3348,
+          "direction": 8
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "rel_actors_actor_aliases": {
+        "id": "rel_actors_actor_aliases",
+        "identification": true,
+        "relationshipType": 16,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "actors_006",
+          "columnIds": [
+            "actors_id"
+          ],
+          "x": 2254.8772,
+          "y": 1068.5354,
+          "direction": 8
+        },
+        "end": {
+          "tableId": "actor_aliases_007",
+          "columnIds": [
+            "actor_aliases_actor_id"
+          ],
+          "x": 2225.1713,
+          "y": 1153.6111,
+          "direction": 4
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "rel_tokens_scripts": {
+        "id": "rel_tokens_scripts",
+        "identification": true,
+        "relationshipType": 16,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "tokens_003",
+          "columnIds": [
+            "tokens_id"
+          ],
+          "x": 1205.9342,
+          "y": 738.6368,
+          "direction": 1
+        },
+        "end": {
+          "tableId": "scripts_005",
+          "columnIds": [
+            "scripts_token_id"
+          ],
+          "x": 1068.6456,
+          "y": 955.0269,
+          "direction": 2
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "rel_scripts_words": {
+        "id": "rel_scripts_words",
+        "identification": true,
+        "relationshipType": 16,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "scripts_005",
+          "columnIds": [
+            "scripts_id"
+          ],
+          "x": 761.6456000000001,
+          "y": 855.0269,
+          "direction": 4
+        },
+        "end": {
+          "tableId": "words_008",
+          "columnIds": [
+            "words_script_id"
+          ],
+          "x": 823.5101999999999,
+          "y": 746.3464,
+          "direction": 8
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "rel_tokens_token_actors": {
+        "id": "rel_tokens_token_actors",
+        "identification": true,
+        "relationshipType": 16,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "tokens_003",
+          "columnIds": [
+            "tokens_id"
+          ],
+          "x": 1558.4342,
+          "y": 978.6368,
+          "direction": 8
+        },
+        "end": {
+          "tableId": "token_actors_009",
+          "columnIds": [
+            "token_actors_token_id"
+          ],
+          "x": 1532.0748,
+          "y": 1129.6585,
+          "direction": 4
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "rel_actors_token_actors": {
+        "id": "rel_actors_token_actors",
+        "identification": true,
+        "relationshipType": 16,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "actors_006",
+          "columnIds": [
+            "actors_id"
+          ],
+          "x": 1970.3772,
+          "y": 1016.5354,
+          "direction": 1
+        },
+        "end": {
+          "tableId": "token_actors_009",
+          "columnIds": [
+            "token_actors_actor_id"
+          ],
+          "x": 1837.5748,
+          "y": 1193.6585,
+          "direction": 2
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      },
+      "rel_tokens_analysis_results": {
+        "id": "rel_tokens_analysis_results",
+        "identification": true,
+        "relationshipType": 16,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "tokens_003",
+          "columnIds": [
+            "tokens_id"
+          ],
+          "x": 1205.9342,
+          "y": 898.6368,
+          "direction": 1
+        },
+        "end": {
+          "tableId": "analysis_results_010",
+          "columnIds": [
+            "analysis_results_token_id"
+          ],
+          "x": 1162.5038,
+          "y": 1189.4992,
+          "direction": 2
+        },
+        "meta": {
+          "updateAt": 1720180800000,
+          "createAt": 1720180800000
+        }
+      }
+    },
+    "indexEntities": {},
+    "indexColumnEntities": {},
+    "memoEntities": {}
+  }
+}

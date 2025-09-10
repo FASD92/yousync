@@ -1,0 +1,290 @@
+[
+{
+    "whyshouldnttheguyletoffalittlesteam": {
+      "overall_score": 0.703,
+      "word_analysis": [
+        {
+          "word": "Why",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.179,
+          "word_score": 0.672
+        },
+        {
+          "word": "shouldn't",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.165,
+          "word_score": 0.658
+        },
+        {
+          "word": "the",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.162,
+          "word_score": 0.702
+        },
+        {
+          "word": "guy",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.184,
+          "word_score": 0.735
+        },
+        {
+          "word": "let",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.158,
+          "word_score": 0.611
+        },
+        {
+          "word": "off",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.168,
+          "word_score": 0.689
+        },
+        {
+          "word": "a",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.133,
+          "word_score": 0.623
+        },
+        {
+          "word": "little",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.174,
+          "word_score": 0.758
+        },
+        {
+          "word": "steam?",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.166,
+          "word_score": 0.695
+        }
+      ],
+      "summary": {
+        "text_accuracy": 0,
+        "time_accuracy": 0,
+        "mfcc_average": 0.165,
+        "total_words": 9,
+        "passed_words": 0,
+        "time_matched_words": 0
+      },
+      "failure_analysis": {
+        "stt_failures": [
+          "Why",
+          "shouldn't",
+          "the",
+          "guy",
+          "let",
+          "off",
+          "a",
+          "little",
+          "steam?"
+        ],
+        "time_failures": [],
+        "mfcc_low_quality": [
+          "Why",
+          "shouldn't",
+          "the",
+          "guy",
+          "let",
+          "off",
+          "a",
+          "little",
+          "steam?"
+        ]
+      }
+    }
+  },
+  {
+    "ohimstartingtowantyoutomakeme": {
+      "overall_score": 0.692,
+      "word_analysis": [
+        {
+          "word": "Oh,",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.173,
+          "word_score": 0.675
+        },
+        {
+          "word": "I'm",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.156,
+          "word_score": 0.614
+        },
+        {
+          "word": "starting",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.164,
+          "word_score": 0.645
+        },
+        {
+          "word": "to",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.17,
+          "word_score": 0.676
+        },
+        {
+          "word": "want",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.164,
+          "word_score": 0.663
+        },
+        {
+          "word": "you",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.18,
+          "word_score": 0.700
+        },
+        {
+          "word": "to",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.184,
+          "word_score": 0.721
+        },
+        {
+          "word": "make",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.172,
+          "word_score": 0.668
+        },
+        {
+          "word": "me.",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.167,
+          "word_score": 0.655
+        }
+      ],
+      "summary": {
+        "text_accuracy": 0,
+        "time_accuracy": 0,
+        "mfcc_average": 0.17,
+        "total_words": 9,
+        "passed_words": 0,
+        "time_matched_words": 0
+      },
+      "failure_analysis": {
+        "stt_failures": [
+          "Oh,",
+          "I'm",
+          "starting",
+          "to",
+          "want",
+          "you",
+          "to",
+          "make",
+          "me."
+        ],
+        "time_failures": [],
+        "mfcc_low_quality": [
+          "Oh,",
+          "I'm",
+          "starting",
+          "to",
+          "want",
+          "you",
+          "to",
+          "make",
+          "me."
+        ]
+      }
+    }
+  },
+  {
+    "geniusbillionaireplayboyphilanthropist": {
+      "overall_score": 0.700,
+      "word_analysis": [
+        {
+          "word": "Genius",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.181,
+          "word_score": 0.720
+        },
+        {
+          "word": "billionaire",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.160,
+          "word_score": 0.680
+        },
+        {
+          "word": "playboy",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.174,
+          "word_score": 0.710
+        },
+        {
+          "word": "philanthropist.",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.150,
+          "word_score": 0.152
+        }
+      ],
+      "summary": {
+        "text_accuracy": 0,
+        "time_accuracy": 0,
+        "mfcc_average": 0.166,
+        "total_words": 4,
+        "passed_words": 0,
+        "time_matched_words": 0
+      },
+      "failure_analysis": {
+        "stt_failures": [
+          "Genius",
+          "billionaire",
+          "playboy",
+          "philanthropist."
+        ],
+        "time_failures": [],
+        "mfcc_low_quality": [
+          "Genius",
+          "billionaire",
+          "playboy",
+          "philanthropist."
+        ]
+      }
+    }
+  }
+  
+]  
+  

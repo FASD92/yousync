@@ -1,0 +1,361 @@
+[
+{
+    "lookingoveryourshoulderwonderingdoubtingfearinghurtinghopingforsomeeasywayout": {
+    "overall_score": 0.71,
+    "word_analysis": [
+    { "word": "Looking", "text_status": "fail", "time_match": false, "overlap_ratio": 0, "mfcc_similarity": 0.19, "word_score": 0.683 },
+    { "word": "over", "text_status": "fail", "time_match": false, "overlap_ratio": 0, "mfcc_similarity": 0.175, "word_score": 0.614 },
+    { "word": "your", "text_status": "fail", "time_match": false, "overlap_ratio": 0, "mfcc_similarity": 0.184, "word_score": 0.722 },
+    { "word": "shoulder,", "text_status": "fail", "time_match": false, "overlap_ratio": 0, "mfcc_similarity": 0.188, "word_score": 0.798 },
+    { "word": "wondering,", "text_status": "fail", "time_match": false, "overlap_ratio": 0, "mfcc_similarity": 0.162, "word_score": 0.645 },
+    { "word": "doubting,", "text_status": "fail", "time_match": false, "overlap_ratio": 0, "mfcc_similarity": 0.173, "word_score": 0.609 },
+    { "word": "fearing,", "text_status": "fail", "time_match": false, "overlap_ratio": 0, "mfcc_similarity": 0.175, "word_score": 0.765 },
+    { "word": "hurting,", "text_status": "fail", "time_match": false, "overlap_ratio": 0, "mfcc_similarity": 0.175, "word_score": 0.637 },
+    { "word": "hoping", "text_status": "fail", "time_match": false, "overlap_ratio": 0, "mfcc_similarity": 0.174, "word_score": 0.790 },
+    { "word": "for", "text_status": "fail", "time_match": false, "overlap_ratio": 0, "mfcc_similarity": 0.192, "word_score": 0.674 },
+    { "word": "some", "text_status": "fail", "time_match": false, "overlap_ratio": 0, "mfcc_similarity": 0.166, "word_score": 0.607 },
+    { "word": "easy", "text_status": "fail", "time_match": false, "overlap_ratio": 0, "mfcc_similarity": 0.181, "word_score": 0.789 },
+    { "word": "way", "text_status": "fail", "time_match": false, "overlap_ratio": 0, "mfcc_similarity": 0.189, "word_score": 0.725 },
+    { "word": "out,", "text_status": "fail", "time_match": false, "overlap_ratio": 0, "mfcc_similarity": 0.173, "word_score": 0.612 }
+    ],
+    "summary": {
+    "text_accuracy": 0,
+    "time_accuracy": 0,
+    "mfcc_average": 0.178,
+    "total_words": 14,
+    "passed_words": 0,
+    "time_matched_words": 0
+    },
+    "failure_analysis": {
+    "stt_failures": [
+    "Looking", "over", "your", "shoulder,", "wondering,", "doubting,", "fearing,", "hurting,", "hoping", "for", "some", "easy", "way", "out,"
+    ],
+    "time_failures": [],
+    "mfcc_low_quality": [
+    "Looking", "over", "your", "shoulder,", "wondering,", "doubting,", "fearing,", "hurting,", "hoping", "for", "some", "easy", "way", "out,"
+    ]
+    },
+    "user_stt": {
+        "text": "looking over your shoulder, wondering, doubting, fearing, hurting, hoping for some easy way out,",
+        "word_timestamps": [
+          { "word": "looking", "start": -1, "end": -1 },
+          { "word": "over", "start": -1, "end": -1 },
+          { "word": "your", "start": -1, "end": -1 },
+          { "word": "shoulder,", "start": -1, "end": -1 },
+          { "word": "wondering,", "start": -1, "end": -1 },
+          { "word": "doubting,", "start": -1, "end": -1 },
+          { "word": "fearing,", "start": -1, "end": -1 },
+          { "word": "hurting,", "start": -1, "end": -1 },
+          { "word": "hoping", "start": -1, "end": -1 },
+          { "word": "for", "start": -1, "end": -1 },
+          { "word": "some", "start": -1, "end": -1 },
+          { "word": "easy", "start": -1, "end": -1 },
+          { "word": "way", "start": -1, "end": -1 },
+          { "word": "out,", "start": -1, "end": -1 }
+        ]
+      }
+    }
+  },
+
+  {
+    "strugglinggraspingconfusingitchingscratchingmumblingbumblinggrumblinghumbling": {
+      "overall_score": 0.607,
+      "word_analysis": [
+        {
+          "word": "struggling,",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.18,
+          "word_score": 0.725
+        },
+        {
+          "word": "grasping,",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.163,
+          "word_score": 0.648
+        },
+        {
+          "word": "confusing,",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.18,
+          "word_score": 0.793
+        },
+        {
+          "word": "itching,",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.175,
+          "word_score": 0.664
+        },
+        {
+          "word": "scratching,",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.189,
+          "word_score": 0.771
+        },
+        {
+          "word": "mumbling,",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.167,
+          "word_score": 0.615
+        },
+        {
+          "word": "bumbling,",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.197,
+          "word_score": 0.688
+        },
+        {
+          "word": "grumbling,",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.214,
+          "word_score": 0.705
+        },
+        {
+          "word": "humbling,",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.178,
+          "word_score": 0.243
+        }
+      ],
+      "summary": {
+        "text_accuracy": 0,
+        "time_accuracy": 0,
+        "mfcc_average": 0.183,
+        "total_words": 9,
+        "passed_words": 0,
+        "time_matched_words": 0
+      },
+      "failure_analysis": {
+        "stt_failures": [
+          "struggling,",
+          "grasping,",
+          "confusing,",
+          "itching,",
+          "scratching,",
+          "mumbling,",
+          "bumbling,",
+          "grumbling,",
+          "humbling,"
+        ],
+        "time_failures": [],
+        "mfcc_low_quality": [
+          "struggling,",
+          "grasping,",
+          "confusing,",
+          "itching,",
+          "scratching,",
+          "mumbling,",
+          "bumbling,",
+          "grumbling,",
+          "ddubling,"
+        ]
+      },
+    "user_stt": {
+  "text": "struggling, grasping, confusing, itching, scratching, mumbling, bumbling, grumbling, humbling,",
+  "word_timestamps": [
+    {
+      "word": "strugling,", 
+      "start": -1,
+      "end": -1
+    },
+    {
+      "word": "grapsing,", 
+      "start": -1,
+      "end": -1
+    },
+    {
+      "word": "confusing,", 
+      "start": -1,
+      "end": -1
+    },
+    {
+      "word": "iching,", 
+      "start": -1,
+      "end": -1
+    },
+    {
+      "word": "scratching,", 
+      "start": -1,
+      "end": -1
+    },
+    {
+      "word": "mumling,", 
+      "start": -1,
+      "end": -1
+    },
+    {
+      "word": "bumbling,", 
+      "start": -1,
+      "end": -1
+    },
+    {
+      "word": "grumbling,", 
+      "start": -1,
+      "end": -1
+    },
+    {
+      "word": "ddubing,", 
+      "start": -1,
+      "end": -1
+    }
+  ]
+}
+    }
+  },
+  {
+    "strugglinggraspingconfusingitchingscratchingmumblingbumblinggrumblinghumbling": {
+      "overall_score": 0.694,
+      "word_analysis": [
+        {
+          "word": "struggling,",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.192,
+          "word_score": 0.736
+        },
+        {
+          "word": "grasping,",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.171,
+          "word_score": 0.662
+        },
+        {
+          "word": "confusing,",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.186,
+          "word_score": 0.712
+        },
+        {
+          "word": "itching,",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.181,
+          "word_score": 0.684
+        },
+        {
+          "word": "scratching,",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.194,
+          "word_score": 0.758
+        },
+        {
+          "word": "mumbling,",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.175,
+          "word_score": 0.642
+        },
+        {
+          "word": "bumbling,",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.201,
+          "word_score": 0.699
+        },
+        {
+          "word": "grumbling,",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.219,
+          "word_score": 0.725
+        },
+        {
+          "word": "humbling,",
+          "text_status": "fail",
+          "time_match": false,
+          "overlap_ratio": 0,
+          "mfcc_similarity": 0.185,
+          "word_score": 0.687
+        }
+      ],
+      "summary": {
+        "text_accuracy": 0,
+        "time_accuracy": 0,
+        "mfcc_average": 0.189,
+        "total_words": 9,
+        "passed_words": 0,
+        "time_matched_words": 0
+      },
+      "failure_analysis": {
+        "stt_failures": [
+          "struggling,",
+          "grasping,",
+          "confusing,",
+          "itching,",
+          "scratching,",
+          "mumbling,",
+          "bumbling,",
+          "grumbling,",
+          "humbling,"
+        ],
+        "time_failures": [],
+        "mfcc_low_quality": [
+          "struggling,",
+          "grasping,",
+          "confusing,",
+          "itching,",
+          "scratching,",
+          "mumbling,",
+          "bumbling,",
+          "grumbling,",
+          "humbling,"
+        ]
+      },
+      "user_stt": {
+        "text": "It's lovely.",
+        "word_timestamps": [
+          {
+            "word": "It",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "word": "'s",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "word": "lovely",
+            "start": -1,
+            "end": -1
+          },
+          {
+            "word": ".",
+            "start": -1,
+            "end": -1
+          }
+        ]
+      }
+    }
+  }
+  
+
+]
